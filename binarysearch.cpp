@@ -92,3 +92,13 @@ void binarySearch()
                 cout << "\n[✓] Elemen " << x << " ditemukan pada indeks " << mid << "\n";
                 return;
             }
+
+            if (x < element[mid])
+            {
+                high = mid - 1;
+            }
+
+            if (x > element[mid])
+            {
+                low = mid + 1;
+            }
